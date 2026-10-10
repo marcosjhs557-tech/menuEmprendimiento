@@ -1,0 +1,170 @@
+/* =========================================
+   1. ESTILOS GENERALES (RESET BÁSICO)
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333333;
+  padding: 20px;
+}
+
+/* =========================================
+   2. CONTENEDOR PRINCIPAL
+   ========================================= */
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   3. ENCABEZADOS Y TEXTOS
+   ========================================= */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #1a252f;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+/* =========================================
+   4. MENÚ PRINCIPAL (INDEX)
+   ========================================= */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tarjeta-menu {
+  width: 180px;
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tarjeta-menu:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-menu span {
+  font-size: 32px;
+}
+
+/* =========================================
+   5. COLORES DE LAS TARJETAS
+   ========================================= */
+.teal {
+  background-color: #037f8c;
+}
+
+.coral {
+  background-color: #f25764;
+}
+
+.ambar {
+  background-color: #fca326;
+}
+
+/* =========================================
+   6. CONTENIDO DE LAS PÁGINAS (PRODUCTOS, ETC.)
+   ========================================= */
+.seccion-tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #1a252f;
+}
+
+.tarjeta p {
+  margin-bottom: 12px;
+}
+
+/* =========================================
+   7. BOTONES Y NAVEGACIÓN
+   ========================================= */
+.boton {
+  display: inline-block;
+  padding: 10px 16px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.boton-volver:hover {
+  background-color: #e0e0e0;
+}
+
+/* =========================================
+   8. CAJA DESTACADA DE HORARIOS / CONTACTO
+   ========================================= */
+.caja-horario {
+  background-color: #ffffff;
+  border-left: 5px solid #fca326;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.caja-horario h3 {
+  font-size: 18px;
+  color: #fca326;
+  margin-bottom: 5px;
+}
+

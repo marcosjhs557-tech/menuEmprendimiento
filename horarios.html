@@ -2,45 +2,217 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Horario de Atención y Contacto</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Productos de Software - Soluciones Digitales</title>
+  <meta name="description" content="Desarrollo de software a la medida, sistemas web, apps móviles con Flutter, automatizaciones y contenedores cloud.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('soluciones_theme');
+      const theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 <body>
 
-  <div class="contenedor">
-    <nav>
-      <a href="index.html" class="boton-volver">← Volver al menú</a>
-    </nav>
+  <div class="container">
+    <!-- Top Navigation Bar -->
+    <header class="nav-bar">
+      <a href="./index.html" class="btn-back">
+        <span>←</span> Volver al Menú
+      </a>
 
-    <header>
-      <h1>Horario de Atención</h1>
-      <p>Estos son los momentos en los que puedo atender tus consultas</p>
+      <nav class="nav-links">
+        <a href="./productos.html" class="nav-link active">📋 Mis Productos</a>
+        <a href="./emprendimiento.html" class="nav-link">🎯 Mi Emprendimiento</a>
+        <a href="./horarios.html" class="nav-link">⏰ Horario de Atención</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark / Light) -->
+        <button type="button" class="theme-toggle" aria-label="Cambiar tema">
+          <!-- Moon Icon (Light Mode) -->
+          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+          <!-- Sun Icon (Dark Mode) -->
+          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2"/>
+            <path d="M12 20v2"/>
+            <path d="m4.93 4.93 1.41 1.41"/>
+            <path d="m17.66 17.66 1.41 1.41"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="m6.34 17.66-1.41 1.41"/>
+            <path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+        </button>
+
+        <a href="./horarios.html" class="btn btn-teal">
+          <span>⏰ Ver Horarios</span>
+        </a>
+      </div>
     </header>
 
-    <main class="seccion-tarjetas">
-      <div class="caja-horario">
-        <h3>💼 Lunes a Viernes</h3>
-        <p><strong>Horario:</strong> Después de las 5:00 PM (hasta las 9:00 PM)</p>
-        <p>Atención para dudas técnicas y avance de proyectos.</p>
-      </div>
+    <!-- Encabezado Banner -->
+    <section class="header-banner banner-teal">
+      <h1><span>📋</span> Mis Productos y Soluciones de Software</h1>
+      <p>Desarrollo de software a la medida, automatización e infraestructura digital moderna para transformar ideas y optimizar tus procesos empresariales.</p>
+    </section>
 
-      <div class="caja-horario">
-        <h3>☀️ Sábados y Domingos</h3>
-        <p><strong>Horario:</strong> Por la mañana (de 8:00 AM a 12:30 PM)</p>
-        <p>Atención para cotizaciones y reuniones iniciales.</p>
-      </div>
+    <!-- Catálogo de productos -->
+    <main class="grid-cards">
+      <!-- Producto 1 -->
+      <article class="card-item">
+        <div>
+          <div class="card-icon" style="color: var(--accent-teal);">💻</div>
+          <h2>Sistemas Web & APIs Backend</h2>
+          <p>Desarrollo de arquitecturas backend robustas con C# y .NET Core, APIs RESTful escalables y plataformas web completas para gestión operativa y control empresarial.</p>
+          <div class="tags">
+            <span class="tag">C# / .NET</span>
+            <span class="tag">APIs REST</span>
+            <span class="tag">SQL / BD</span>
+            <span class="tag">Seguridad JWT</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 16px;">
+          <button onclick="openQuoteModal('Sistemas Web & APIs Backend')" class="btn btn-teal" style="flex: 1;">
+            Consultar este servicio
+          </button>
+        </div>
+      </article>
 
-      <article class="tarjeta">
-        <h2>Canales de Contacto</h2>
-        <p>Escríbeme por cualquiera de estos medios para coordinar:</p>
-        <p>📧 <strong>Correo:</strong> marcos.sorto@udb.edu.sv</p>
-        <p>💬 <strong>WhatsApp:</strong> Disponible para mensajes rápidos</p>
-        <br>
-        <a href="productos.html" class="boton ambar">Ver productos disponibles</a>
+      <!-- Producto 2 -->
+      <article class="card-item">
+        <div>
+          <div class="card-icon" style="color: var(--accent-coral);">📱</div>
+          <h2>Aplicaciones Móviles con Flutter</h2>
+          <p>Apps móviles de alto rendimiento para Android e iOS con una sola base de código, interfaz reactiva, persistencia fluida y excelente experiencia de usuario.</p>
+          <div class="tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Android & iOS</span>
+            <span class="tag">Multiplataforma</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 16px;">
+          <button onclick="openQuoteModal('Aplicaciones Móviles con Flutter')" class="btn btn-teal" style="flex: 1;">
+            Consultar este servicio
+          </button>
+        </div>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="card-item">
+        <div>
+          <div class="card-icon" style="color: var(--accent-amber);">📊</div>
+          <h2>Automatización & Cuadros de Mando</h2>
+          <p>Herramientas interactivas para análisis de datos, visualización con Streamlit y automatización de procesos repetitivos para organizar tu vida digital y laboral.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Automatización</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 16px;">
+          <button onclick="openQuoteModal('Automatización & Cuadros de Mando')" class="btn btn-teal" style="flex: 1;">
+            Consultar este servicio
+          </button>
+        </div>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="card-item">
+        <div>
+          <div class="card-icon" style="color: var(--accent-indigo);">☁️</div>
+          <h2>Despliegue Cloud & Contenerización</h2>
+          <p>Configuración de contenedores con Docker, optimización de infraestructura en la nube y puesta en marcha de aplicaciones de forma ágil, reproducible y segura.</p>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Cloud / AWS / Azure</span>
+            <span class="tag">DevOps</span>
+            <span class="tag">Microservicios</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 16px;">
+          <button onclick="openQuoteModal('Despliegue Cloud & Contenerización')" class="btn btn-teal" style="flex: 1;">
+            Consultar este servicio
+          </button>
+        </div>
       </article>
     </main>
+
+    <!-- Aviso de horario interactivo -->
+    <aside class="notice-box">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span style="font-size: 1.5rem;">⏰</span>
+        <span>¿Te interesa alguno de estos productos? Revisa mis horarios de atención para coordinar una reunión o cotización personalizada.</span>
+      </div>
+      <a href="./horarios.html" class="btn btn-amber">Ver Horarios de Atención</a>
+    </aside>
+
+    <!-- Acciones Rápidas -->
+    <footer class="actions-bar">
+      <a href="./emprendimiento.html" class="btn btn-coral">🎯 Conocer Mi Emprendimiento</a>
+      <a href="./horarios.html" class="btn btn-amber">⏰ Horarios y Canales de Contacto</a>
+    </footer>
   </div>
 
+  <!-- Modal de Consulta Rápida -->
+  <div id="quote-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Consultar Servicio</h3>
+        <button class="modal-close" onclick="closeQuoteModal()" aria-label="Cerrar modal">✕</button>
+      </div>
+      <form id="quote-form">
+        <div class="form-group">
+          <label class="form-label" for="quote-name">Tu Nombre o Empresa</label>
+          <input type="text" id="quote-name" class="form-input" placeholder="Ej. Ana Rivera" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="quote-service-select">Servicio Seleccionado</label>
+          <select id="quote-service-select" class="form-select">
+            <option value="Sistemas Web & APIs Backend">Sistemas Web & APIs Backend (.NET)</option>
+            <option value="Aplicaciones Móviles con Flutter">Aplicaciones Móviles con Flutter</option>
+            <option value="Automatización & Cuadros de Mando">Automatización & Cuadros de Mando (Python)</option>
+            <option value="Despliegue Cloud & Contenerización">Despliegue Cloud & Contenerización</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="quote-details">¿Qué necesitas construir o resolver?</label>
+          <textarea id="quote-details" class="form-textarea" rows="4" placeholder="Describe brevemente el alcance de tu proyecto o requerimiento..." required></textarea>
+        </div>
+        <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 24px;">
+          <button type="button" class="btn btn-secondary" onclick="closeQuoteModal()">Cerrar</button>
+          <button type="submit" class="btn btn-teal">✉️ Enviar a marcos.sorto@udb.edu.sv</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Marcos Sorto · Soluciones Digitales</strong> — Catálogo de Software
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Menú</a>
+        <span>·</span>
+        <a href="./emprendimiento.html">Emprendimiento</a>
+        <span>·</span>
+        <a href="./horarios.html">Horarios</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
-

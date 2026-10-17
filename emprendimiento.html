@@ -2,40 +2,169 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Emprendimiento - Sobre Nosotros</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Emprendimiento - Soluciones Digitales</title>
+  <meta name="description" content="Misión, visión, propuesta de valor y pilares técnicos de nuestro emprendimiento de desarrollo de software.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('soluciones_theme');
+      const theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 <body>
 
-  <div class="contenedor">
-    <nav>
-      <a href="index.html" class="boton-volver">← Volver al menú</a>
-    </nav>
+  <div class="container">
+    <!-- Top Navigation Bar -->
+    <header class="nav-bar">
+      <a href="./index.html" class="btn-back">
+        <span>←</span> Volver al Menú
+      </a>
 
-    <header>
-      <h1>Mi Emprendimiento</h1>
-      <p>Conoce quiénes somos y cómo te ayudamos con la tecnología</p>
+      <nav class="nav-links">
+        <a href="./productos.html" class="nav-link">📋 Mis Productos</a>
+        <a href="./emprendimiento.html" class="nav-link active">🎯 Mi Emprendimiento</a>
+        <a href="./horarios.html" class="nav-link">⏰ Horario de Atención</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher (Dark / Light) -->
+        <button type="button" class="theme-toggle" aria-label="Cambiar tema">
+          <!-- Moon Icon (Light Mode) -->
+          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+          <!-- Sun Icon (Dark Mode) -->
+          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2"/>
+            <path d="M12 20v2"/>
+            <path d="m4.93 4.93 1.41 1.41"/>
+            <path d="m17.66 17.66 1.41 1.41"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="m6.34 17.66-1.41 1.41"/>
+            <path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+        </button>
+
+        <a href="./horarios.html" class="btn btn-coral">
+          <span>⏰ Horarios</span>
+        </a>
+      </div>
     </header>
 
-    <main class="seccion-tarjetas">
-      <article class="tarjeta">
-        <h2>🎯 Nuestra Misión</h2>
-        <p>Ayudar a emprendedores y negocios a dar el salto digital con programas fáciles de usar y de alta calidad.</p>
+    <!-- Encabezado Banner -->
+    <section class="header-banner banner-coral">
+      <h1><span>🎯</span> Sobre Mi Emprendimiento</h1>
+      <p>Transformando requerimientos en soluciones tecnológicas eficientes, modernas y centradas en la productividad digital de cada cliente.</p>
+    </section>
+
+    <!-- Misión, Visión y Propuesta de Valor -->
+    <main class="grid-cards">
+      <article class="card-item">
+        <div>
+          <div class="card-icon" style="color: var(--accent-coral);">🚀</div>
+          <h2>Nuestra Misión</h2>
+          <p>Brindar a profesionales, emprendedores y pequeñas empresas soluciones de software a la medida, automatizaciones y herramientas prácticas que optimicen sus operaciones y potencien su presencia digital.</p>
+        </div>
       </article>
 
-      <article class="tarjeta">
-        <h2>🔭 Nuestra Visión</h2>
-        <p>Ser una solución tecnológica confiable, destacando por un trato cercano y entregas a tiempo.</p>
+      <article class="card-item">
+        <div>
+          <div class="card-icon" style="color: var(--accent-teal);">🔭</div>
+          <h2>Nuestra Visión</h2>
+          <p>Consolidarnos como un referente en desarrollo tecnológico confiable y cercano, caracterizado por la innovación continua, altos estándares de ingeniería y soluciones que realmente generan impacto.</p>
+        </div>
       </article>
 
-      <article class="tarjeta">
-        <h2>🛠️ Tecnologías que Usamos</h2>
-        <p>Trabajamos con C#, .NET, Python, Flutter, Docker y bases de datos para proyectos seguros y rápidos.</p>
-        <a href="productos.html" class="boton coral">Ver productos</a>
+      <article class="card-item">
+        <div>
+          <div class="card-icon" style="color: var(--accent-amber);">💡</div>
+          <h2>Propuesta de Valor</h2>
+          <p>Acompañamiento personalizado desde la concepción de la idea hasta su despliegue y mantenimiento, con foco en código limpio, escalabilidad y una experiencia de usuario impecable.</p>
+        </div>
       </article>
     </main>
+
+    <!-- Pilares de Trabajo -->
+    <section class="panel-box">
+      <h2>Pilares de Trabajo</h2>
+      <div class="grid-cards" style="margin-bottom: 0;">
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+          <div class="card-icon" style="color: var(--accent-coral); flex-shrink: 0; font-size: 1.5rem;">⚡</div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; color: var(--text-main);">Solidez Técnica</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5;">Arquitecturas probadas con .NET, APIs seguras y contenedores Docker para garantizar estabilidad en producción.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+          <div class="card-icon" style="color: var(--accent-coral); flex-shrink: 0; font-size: 1.5rem;">📱</div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; color: var(--text-main);">Diseño Multiplataforma</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5;">Experiencias móviles y web consistentes desarrolladas con tecnologías líderes como Flutter y React.</p>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+          <div class="card-icon" style="color: var(--accent-coral); flex-shrink: 0; font-size: 1.5rem;">🤝</div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; color: var(--text-main);">Atención Dedicada</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.5;">Trato transparente y comunicación constante adaptada a tus necesidades y horarios disponibles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack Tecnológico Interactivo -->
+    <section class="panel-box" style="text-align: center;">
+      <h2>Stack Tecnológico Principal</h2>
+      <p style="font-size: 0.95rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 16px;">
+        Haz clic en cada tecnología para consultar sus estándares de ingeniería y casos de aplicación:
+      </p>
+
+      <div class="chip-list">
+        <button type="button" class="chip" data-tech="C# / .NET Core">💻 C# / .NET Core</button>
+        <button type="button" class="chip" data-tech="Python / Streamlit">🐍 Python / Streamlit</button>
+        <button type="button" class="chip" data-tech="Flutter / Android">📱 Flutter / Android</button>
+        <button type="button" class="chip" data-tech="Docker & Cloud">🐳 Docker & Cloud</button>
+        <button type="button" class="chip" data-tech="SQL & Bases de Datos">🗄️ SQL & Bases de Datos</button>
+        <button type="button" class="chip" data-tech="HTML5 / CSS3 Moderno">🌐 HTML5 / CSS3 Moderno</button>
+      </div>
+
+      <!-- Detalle interactivo del stack -->
+      <div id="tech-stack-detail" style="margin-top: 24px; padding: 20px; border-radius: var(--radius-md); background: var(--bg-page-subtle); border: 1px solid var(--border-subtle); display: none;"></div>
+    </section>
+
+    <!-- Botones de Acción -->
+    <footer class="actions-bar">
+      <a href="./productos.html" class="btn btn-teal">📋 Conocer Nuestros Productos</a>
+      <a href="./horarios.html" class="btn btn-coral">⏰ Consultar Horario de Atención</a>
+    </footer>
   </div>
 
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Marcos Sorto · Soluciones Digitales</strong> — Misión y Valores
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">Menú</a>
+        <span>·</span>
+        <a href="./productos.html">Productos</a>
+        <span>·</span>
+        <a href="./horarios.html">Horarios</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
-

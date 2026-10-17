@@ -1,218 +1,216 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Productos de Software - Soluciones Digitales</title>
-  <meta name="description" content="Desarrollo de software a la medida, sistemas web, apps móviles con Flutter, automatizaciones y contenedores cloud.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <script>
-    (function() {
-      const saved = localStorage.getItem('soluciones_theme');
-      const theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', theme);
-    })();
-  </script>
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Atención y Contacto - Soluciones Digitales</title>
+    <meta name="description" content="Franjas horarias disponibles para consultas, agendamiento de videollamadas y canales directos de contacto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+      (function() {
+        const saved = localStorage.getItem('soluciones_theme');
+        const theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+  </head>
+  <body>
 
-  <div class="container">
-    <!-- Top Navigation Bar -->
-    <header class="nav-bar">
-      <a href="./index.html" class="btn-back">
-        <span>←</span> Volver al Menú
-      </a>
-
-      <nav class="nav-links">
-        <a href="./productos.html" class="nav-link active">📋 Mis Productos</a>
-        <a href="./emprendimiento.html" class="nav-link">🎯 Mi Emprendimiento</a>
-        <a href="./horarios.html" class="nav-link">⏰ Horario de Atención</a>
-      </nav>
-
-      <div class="nav-actions">
-        <!-- Theme Switcher (Dark / Light) -->
-        <button type="button" class="theme-toggle" aria-label="Cambiar tema">
-          <!-- Moon Icon (Light Mode) -->
-          <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
-          </svg>
-          <!-- Sun Icon (Dark Mode) -->
-          <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2"/>
-            <path d="M12 20v2"/>
-            <path d="m4.93 4.93 1.41 1.41"/>
-            <path d="m17.66 17.66 1.41 1.41"/>
-            <path d="M2 12h2"/>
-            <path d="M20 12h2"/>
-            <path d="m6.34 17.66-1.41 1.41"/>
-            <path d="m19.07 4.93-1.41 1.41"/>
-          </svg>
-        </button>
-
-        <a href="./horarios.html" class="btn btn-teal">
-          <span>⏰ Ver Horarios</span>
+    <div class="container">
+      <!-- Top Navigation Bar -->
+      <header class="nav-bar">
+        <a href="./index.html" class="btn-back">
+          <span>←</span> Volver al Menú
         </a>
+
+        <nav class="nav-links">
+          <a href="./productos.html" class="nav-link">📋 Mis Productos</a>
+          <a href="./emprendimiento.html" class="nav-link">🎯 Mi Emprendimiento</a>
+          <a href="./horarios.html" class="nav-link active">⏰ Horario de Atención</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Theme Switcher (Dark / Light) -->
+          <button type="button" class="theme-toggle" aria-label="Cambiar tema">
+            <!-- Moon Icon (Light Mode) -->
+            <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+            </svg>
+            <!-- Sun Icon (Dark Mode) -->
+            <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2"/>
+              <path d="M12 20v2"/>
+              <path d="m4.93 4.93 1.41 1.41"/>
+              <path d="m17.66 17.66 1.41 1.41"/>
+              <path d="M2 12h2"/>
+              <path d="M20 12h2"/>
+              <path d="m6.34 17.66-1.41 1.41"/>
+              <path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+          </button>
+
+          <button onclick="openQuoteModal('Agendar Reunión')" class="btn btn-amber">
+            <span>📅 Agendar Cita</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Encabezado Banner -->
+      <section class="header-banner banner-amber">
+        <div id="live-status-indicator" style="margin-bottom: 14px;"></div>
+        <h1><span>⏰</span> Horario de Atención y Contacto</h1>
+        <p>Conoce mis franjas horarias disponibles para consultas de proyectos, reuniones técnicas y soporte personalizado.</p>
+      </section>
+
+      <!-- Grilla de Horarios -->
+      <main class="grid-cards">
+        <!-- Durante la semana -->
+        <article class="card-item">
+          <div>
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+              <div class="card-icon" style="margin-bottom: 0; color: var(--accent-amber);">💼</div>
+              <h2>Lunes a Viernes</h2>
+            </div>
+            <div class="time-slot">
+              <span class="time-highlight">Después de las 5:00 PM</span>
+              <span class="time-note">5:00 PM – 9:00 PM (UTC-6)</span>
+            </div>
+            <p>
+              Espacio dedicado a atención al cliente, sesiones de planificación, revisión de avances de desarrollo y soporte técnico tras la jornada diurna.
+            </p>
+          </div>
+          <button onclick="openQuoteModal('Reunión Lunes a Viernes (Noche)')" class="btn btn-secondary" style="width: 100%; margin-top: 12px;">
+            Solicitar reunión en esta franja
+          </button>
+        </article>
+
+        <!-- Fines de semana -->
+        <article class="card-item">
+          <div>
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+              <div class="card-icon" style="margin-bottom: 0; color: var(--accent-amber);">☀️</div>
+              <h2>Sábados y Domingos</h2>
+            </div>
+            <div class="time-slot">
+              <span class="time-highlight">Por la Mañana</span>
+              <span class="time-note">8:00 AM – 12:30 PM (UTC-6)</span>
+            </div>
+            <p>
+              Horario matutino para asesorías técnicas detalladas, levantamiento de requerimientos, demostraciones de software y nuevos presupuestos.
+            </p>
+          </div>
+          <button onclick="openQuoteModal('Asesoría Fin de Semana (Mañana)')" class="btn btn-secondary" style="width: 100%; margin-top: 12px;">
+            Solicitar reunión matutina
+          </button>
+        </article>
+      </main>
+
+      <!-- Canales de Comunicación -->
+      <section class="panel-box">
+        <h2>Canales de Atención Directa</h2>
+        <div class="grid-cards" style="margin-bottom: 0;">
+          <a href="mailto:marcos.sorto@udb.edu.sv?subject=Consulta%20de%20Proyecto%20de%20Software" class="card-item" style="text-decoration: none; color: inherit; flex-direction: row; align-items: center; gap: 14px;">
+            <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; color: var(--accent-teal);">✉️</div>
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 2px;">Correo Electrónico</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 2px; color: var(--text-muted);">marcos.sorto@udb.edu.sv</p>
+              <span style="font-size: 0.82rem; color: var(--accent-teal-text); font-weight: 600;">Enviar especificaciones →</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/?text=Hola%20Marcos,%20deseo%20consultar%20sobre%20tus%20servicios%20de%20desarrollo%20de%20software" target="_blank" rel="noopener noreferrer" class="card-item" style="text-decoration: none; color: inherit; flex-direction: row; align-items: center; gap: 14px;">
+            <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; color: var(--color-success);">💬</div>
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 2px;">WhatsApp Directo</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 2px; color: var(--text-muted);">Consultas rápidas y agendamiento</p>
+              <span style="font-size: 0.82rem; color: var(--color-success); font-weight: 600;">Abrir conversación →</span>
+            </div>
+          </a>
+
+          <div class="card-item" onclick="openQuoteModal('Sesión Virtual')" style="cursor: pointer; flex-direction: row; align-items: center; gap: 14px;">
+            <div class="card-icon" style="margin-bottom: 0; flex-shrink: 0; color: var(--accent-indigo);">💻</div>
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin-bottom: 2px;">Sesión Virtual</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 2px; color: var(--text-muted);">Google Meet / Teams (previa cita)</p>
+              <span style="font-size: 0.82rem; color: var(--accent-indigo); font-weight: 600;">Coordinar horario →</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mensaje informativo -->
+      <aside class="notice-box info">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="font-size: 1.5rem;">📬</span>
+          <span>
+            <strong>Compromiso de respuesta:</strong> Puedes dejar tu mensaje en cualquier momento del día; recibirás respuesta en el primer bloque de atención disponible más próximo.
+          </span>
+        </div>
+        <button onclick="openQuoteModal('Consulta Rápida')" class="btn btn-amber">
+          Enviar Mensaje
+        </button>
+      </aside>
+
+      <!-- Navegación complementaria -->
+      <footer class="actions-bar">
+        <a href="./productos.html" class="btn btn-teal">📋 Ver Catálogo de Productos</a>
+        <a href="./emprendimiento.html" class="btn btn-coral">🎯 Conocer Mi Emprendimiento</a>
+      </footer>
+    </div>
+
+    <!-- Modal de Contacto / Agendamiento -->
+    <div id="quote-modal" class="modal-backdrop">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3>Coordinar Sesión o Consulta</h3>
+          <button class="modal-close" onclick="closeQuoteModal()" aria-label="Cerrar modal">✕</button>
+        </div>
+        <form id="quote-form">
+          <div class="form-group">
+            <label class="form-label" for="quote-name">Tu Nombre o Empresa</label>
+            <input type="text" id="quote-name" class="form-input" placeholder="Ej. Roberto Gómez" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quote-service-select">Motivo o Franja de Interés</label>
+            <select id="quote-service-select" class="form-select">
+              <option value="Reunión Lunes a Viernes (Noche)">Lunes a Viernes (5:00 PM – 9:00 PM)</option>
+              <option value="Asesoría Fin de Semana (Mañana)">Sábados y Domingos (8:00 AM – 12:30 PM)</option>
+              <option value="Sesión Virtual por Google Meet">Sesión Virtual (Google Meet / Teams)</option>
+              <option value="Presupuesto y Levantamiento de Requerimientos">Cotización y Presupuesto</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quote-details">Mensaje o detalles de la consulta</label>
+            <textarea id="quote-details" class="form-textarea" rows="4" placeholder="Indica el tema a tratar o la fecha/hora tentativa que prefieres..." required></textarea>
+          </div>
+          <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 24px;">
+            <button type="button" class="btn btn-secondary" onclick="closeQuoteModal()">Cerrar</button>
+            <button type="submit" class="btn btn-amber">✉️ Enviar a marcos.sorto@udb.edu.sv</button>
+          </div>
+        </form>
       </div>
-    </header>
+    </div>
 
-    <!-- Encabezado Banner -->
-    <section class="header-banner banner-teal">
-      <h1><span>📋</span> Mis Productos y Soluciones de Software</h1>
-      <p>Desarrollo de software a la medida, automatización e infraestructura digital moderna para transformar ideas y optimizar tus procesos empresariales.</p>
-    </section>
-
-    <!-- Catálogo de productos -->
-    <main class="grid-cards">
-      <!-- Producto 1 -->
-      <article class="card-item">
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="container footer-content">
         <div>
-          <div class="card-icon" style="color: var(--accent-teal);">💻</div>
-          <h2>Sistemas Web & APIs Backend</h2>
-          <p>Desarrollo de arquitecturas backend robustas con C# y .NET Core, APIs RESTful escalables y plataformas web completas para gestión operativa y control empresarial.</p>
-          <div class="tags">
-            <span class="tag">C# / .NET</span>
-            <span class="tag">APIs REST</span>
-            <span class="tag">SQL / BD</span>
-            <span class="tag">Seguridad JWT</span>
-          </div>
+          <strong>Marcos Sorto · Soluciones Digitales</strong> — Horarios de Atención
         </div>
-        <div style="display: flex; gap: 10px; margin-top: 16px;">
-          <button onclick="openQuoteModal('Sistemas Web & APIs Backend')" class="btn btn-teal" style="flex: 1;">
-            Consultar este servicio
-          </button>
+        <div class="footer-links">
+          <a href="./index.html">Menú</a>
+          <span>·</span>
+          <a href="./productos.html">Productos</a>
+          <span>·</span>
+          <a href="./emprendimiento.html">Emprendimiento</a>
         </div>
-      </article>
-
-      <!-- Producto 2 -->
-      <article class="card-item">
-        <div>
-          <div class="card-icon" style="color: var(--accent-coral);">📱</div>
-          <h2>Aplicaciones Móviles con Flutter</h2>
-          <p>Apps móviles de alto rendimiento para Android e iOS con una sola base de código, interfaz reactiva, persistencia fluida y excelente experiencia de usuario.</p>
-          <div class="tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Android & iOS</span>
-            <span class="tag">Multiplataforma</span>
-            <span class="tag">UI/UX</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 10px; margin-top: 16px;">
-          <button onclick="openQuoteModal('Aplicaciones Móviles con Flutter')" class="btn btn-teal" style="flex: 1;">
-            Consultar este servicio
-          </button>
-        </div>
-      </article>
-
-      <!-- Producto 3 -->
-      <article class="card-item">
-        <div>
-          <div class="card-icon" style="color: var(--accent-amber);">📊</div>
-          <h2>Automatización & Cuadros de Mando</h2>
-          <p>Herramientas interactivas para análisis de datos, visualización con Streamlit y automatización de procesos repetitivos para organizar tu vida digital y laboral.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">Data Analysis</span>
-            <span class="tag">Automatización</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 10px; margin-top: 16px;">
-          <button onclick="openQuoteModal('Automatización & Cuadros de Mando')" class="btn btn-teal" style="flex: 1;">
-            Consultar este servicio
-          </button>
-        </div>
-      </article>
-
-      <!-- Producto 4 -->
-      <article class="card-item">
-        <div>
-          <div class="card-icon" style="color: var(--accent-indigo);">☁️</div>
-          <h2>Despliegue Cloud & Contenerización</h2>
-          <p>Configuración de contenedores con Docker, optimización de infraestructura en la nube y puesta en marcha de aplicaciones de forma ágil, reproducible y segura.</p>
-          <div class="tags">
-            <span class="tag">Docker</span>
-            <span class="tag">Cloud / AWS / Azure</span>
-            <span class="tag">DevOps</span>
-            <span class="tag">Microservicios</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 10px; margin-top: 16px;">
-          <button onclick="openQuoteModal('Despliegue Cloud & Contenerización')" class="btn btn-teal" style="flex: 1;">
-            Consultar este servicio
-          </button>
-        </div>
-      </article>
-    </main>
-
-    <!-- Aviso de horario interactivo -->
-    <aside class="notice-box">
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <span style="font-size: 1.5rem;">⏰</span>
-        <span>¿Te interesa alguno de estos productos? Revisa mis horarios de atención para coordinar una reunión o cotización personalizada.</span>
       </div>
-      <a href="./horarios.html" class="btn btn-amber">Ver Horarios de Atención</a>
-    </aside>
-
-    <!-- Acciones Rápidas -->
-    <footer class="actions-bar">
-      <a href="./emprendimiento.html" class="btn btn-coral">🎯 Conocer Mi Emprendimiento</a>
-      <a href="./horarios.html" class="btn btn-amber">⏰ Horarios y Canales de Contacto</a>
     </footer>
-  </div>
 
-  <!-- Modal de Consulta Rápida -->
-  <div id="quote-modal" class="modal-backdrop">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3>Consultar Servicio</h3>
-        <button class="modal-close" onclick="closeQuoteModal()" aria-label="Cerrar modal">✕</button>
-      </div>
-      <form id="quote-form">
-        <div class="form-group">
-          <label class="form-label" for="quote-name">Tu Nombre o Empresa</label>
-          <input type="text" id="quote-name" class="form-input" placeholder="Ej. Ana Rivera" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="quote-service-select">Servicio Seleccionado</label>
-          <select id="quote-service-select" class="form-select">
-            <option value="Sistemas Web & APIs Backend">Sistemas Web & APIs Backend (.NET)</option>
-            <option value="Aplicaciones Móviles con Flutter">Aplicaciones Móviles con Flutter</option>
-            <option value="Automatización & Cuadros de Mando">Automatización & Cuadros de Mando (Python)</option>
-            <option value="Despliegue Cloud & Contenerización">Despliegue Cloud & Contenerización</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="quote-details">¿Qué necesitas construir o resolver?</label>
-          <textarea id="quote-details" class="form-textarea" rows="4" placeholder="Describe brevemente el alcance de tu proyecto o requerimiento..." required></textarea>
-        </div>
-        <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 24px;">
-          <button type="button" class="btn btn-secondary" onclick="closeQuoteModal()">Cerrar</button>
-          <button type="submit" class="btn btn-teal">✉️ Enviar a marcos.sorto@udb.edu.sv</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="app-footer">
-    <div class="container footer-content">
-      <div>
-        <strong>Marcos Sorto · Soluciones Digitales</strong> — Catálogo de Software
-      </div>
-      <div class="footer-links">
-        <a href="./index.html">Menú</a>
-        <span>·</span>
-        <a href="./emprendimiento.html">Emprendimiento</a>
-        <span>·</span>
-        <a href="./horarios.html">Horarios</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="./script.js"></script>
-</body>
-</html>
+    <script src="./script.js"></script>
+  </body>
+  </html>
